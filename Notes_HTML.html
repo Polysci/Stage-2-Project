@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+		
+	<meta charset="UTF-8"> 
+		
+	<link rel="stylesheet" href="Notes_CSS.css">
+		
+	<title>
+		Intro to Programming Notes
+	</title>
+
+</head>
+
+<body>
+
+<div class="TOC">
+	
+	<h1 id="beginning">
+		Intro To Programming Notes
+	</h1>
+	
+	<ol>
+		<li><a href="#lesson_1">Getting Started with HTML</a></li>
+		<li><a href="#lesson_2">HTML Structure</a></li>
+		<li><a href="#lesson_3">Adding CSS Style</a></li>
+		<li><a href="#lesson_4">Intro to "Serious" Programming</a></li>
+		<li><a href="#lesson_5">Variables and Strings</a></li>
+		<li><a href="#lesson_6">Input -> Function -> Output</a></li>
+		<li><a href="#lesson_7">If, Else, While, and Debugging</a></li>
+	</ol>
+	
+	<img src="Udacity_ItP_Logo.png" 
+		alt="Udacity Intro to Programming Logo">
+
+</div>
+	
+<h2 id="lesson_1">
+	Getting Started with HTML
+</h2>
+
+<div class="concept">
+	
+	<h3>
+		THE INTERNET
+	</h3>
+		 
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>HTML</em> is the basis of web documents and glues together other things like
+		images and video. Internet <em>Browsers</em> make requests using a protocol called 
+		<em>HTTP</em>, and these requests are received by the <em>Server</em> where the files 
+		are stored. The <em>Server</em> sends these files back to your computer where your 
+		<em>Browser</em> interprets them into the web page you see.
+	</p>
+		
+			<div class="object">
+				
+				<b>BROWSER ↔ INTERNET ↔ SERVER
+					<br>
+					&nbsp;&nbsp;
+				HTTP →
+					&nbsp;&nbsp;&nbsp;
+				← FILES</b>
+			
+			</div>
+			
+</div>
+
+		<a href="#beginning">Back to Top</a>
+	
+<div class="concept">
+	
+	<h3>
+		COMPUTERS ARE STUPID
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Computers aren't very good at reading between the lines, and thus need all
+		instructions delivered perfectly.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+	
+	<h3>
+		HTML
+	</h3>
+		
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>HTML</em> makes up the greater portion of what's on the internet. It includes <em>Text
+		Content</em>, as well as <em>Mark Up</em> that formats some of what you see, and <em>References</em> 
+		to other documents. <em>Mark Up</em> in <em>HTML</em> is made up of <em>Tags. Tags</em> are like
+		instructions to tell a browser what <em>Elements</em> to use. <em>Elements</em> that 
+		<em>Tags</em> produce can be <em>Inline</em> or <em>Block. Block Elements</em> create an invisible 
+		box around the content while <em>Inline Elements</em> only work along single lines.
+	</p>
+
+			<div class="object">
+			
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<b>INLINE TAGS:</b> b (bold), br (break), em (italic),
+					<br>
+				a (anchor), img (image), span, strong
+					<br><br>
+				<b>BLOCK TAGS:</b> p (paragraph), div, form
+				
+			</div>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<h2 id="lesson_2">
+	HTML Structure 
+</h2>
+
+<div class="concept">
+	
+	<h3>
+		HTML STRUCTURE
+	</h3>
+		
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		The standard structure of an <em>HTML</em> document is much like a tree. The tree branches 
+		off in multiple directions from a central sort of trunk. This structure is sometimes called a 
+		<em>DOM</em> or a <em>Document Object Model</em>. <em>HTML</em>s structure is basically boxes 
+		inside of boxes inside of boxes, each box being an <em>Element</em> (<em>Tag</em>). Coders
+		usually use indentation within the structure of the code they are writing. This isn't understood
+		by the computer, but allows the code to have more visual organization for the coder.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+	
+	<h3>
+		CHROME DEVELOPER TOOLS
+	</h3>
+		
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		F12 to open <em>Developer Tools</em> in Chrome. Clicking and mousing over sections shows 
+		them on the page and shows the related style (<em>CSS</em>).
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+
+	<h3>
+		TEXT EDITORS
+	</h3>
+	
+	<p>
+		Some <em>text</em> editors are made for coding. I prefer <em>Notepad++</em>.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<h2 id="lesson_3">
+	Adding CSS Style
+</h2>
+
+<div class="concept">
+
+	<h3>
+		CASCADING STYLE SHEETS (CSS)
+	</h3>
+		
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>CSS</em> controls the style of different <em>HTML Elements</em>. For example, this text is 
+		within a paragraph tag, and <em>CSS</em> is applying the font type and the text alignment for 
+		paragraph tag.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+
+	<h3>
+		REPETITION
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Most objectives can be reached with slightly different code. One might apply 
+		apply a single <em>CSS</em> font to 10 of their <em>elements</em> and others to 2 
+		<em>elements</em>, when it would have been more efficient to apply that font to a broader 
+		element (like the body) and then just apply the 2 other fonts to their proper elements. The 
+		first way involves needless <em>repetition</em> which wastes time and increases the likelihood 
+		of errors. The problem compounds further when things need to be changed or errors are made, 
+		as fixing them will also be more time consuming.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<h2 id="lesson_4">
+	Intro to "Serious" Programming
+</h2>
+
+<div class="concept">
+
+	<h3>
+		Computer Programs
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Computers</em> do nothing alone, but can do anything that we can <em>program</em> them 
+		to do. They need precise instructions to do things, and that is what a <em>program</em> is. 		
+	</p>
+	
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+
+	<h3>
+		Programming Languages
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Various <em>programming languages</em> are used to give computers instructions. 
+		<em>Python</em> is the example being used in this lesson. These languages have grammars, in 
+		that there is a set of governing rules as to how they must be written in order to be 
+		interpreted by the computer. 
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+
+	<h3>
+		Python Expressions
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		A <em>Python expression</em> is a Python statement which can be understood by Python.
+		For example "print 1+1" is a functioning <em>Python expression</em>, and a <em>Python 
+		interpreter</em> would easily print out 2. "print 1+" is not a <em>Python expression</em> 
+		because it is not complete and the Python interpreter would would come back with a syntax 
+		error.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<h2 id="lesson_5">
+	Variables and Strings
+</h2>
+
+<div class="concept">
+
+	<h3>
+		Python Variables
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Variables</em> are a way to name certain <em>values</em> in Python. This is helpful 
+		because it improves code readability, but also functionally, as it allows values to 
+		change. For example:
+	</p>
+	
+			<div class="object">
+			
+					<b>number = 1
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					print number * 20</b>
+						<br><br>
+					This prints 20, because the variable "number" has taken the value of 1.
+			
+			</div>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<div class="concept">
+
+	<h3>
+		Equals Symbol (=)
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Equals symbols</em> have a different meaning in Python than in math. In Python they mean
+		that something will take the value of the other, even if that makes no mathematical sense.
+		For example:
+	</p>
+	
+			<div class="object">
+			
+				<b>number = 10
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				number = number - 5
+					<br>
+				print number</b>
+					<br><br>
+				This prints 5, even though "number" is first defined as 10. The second time "number" is given 
+				a value it takes 5 away from the original value of "number", and reassigns that value to
+				the variable "number", thus when we print it we get 10-5, or 5. This is also an example of
+				how the value of a variable can change, as mentioned in the previous concept.
+			
+			</div>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<div class="concept">
+
+	<h3>
+		Strings
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		In Python, <em>strings</em> are enclosed within single or double quotations. Either work, but the 
+		closing and ending type must match. Things within a string will not be recognized as numbers, so
+		adding 
+	</p>
+
+</div>
+
+<h2 id="lesson_6">
+	Input -> Function -> Output
+</h2>
+
+<div class="concept">
+
+	<h3>
+		Functions
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Functions</em> take some <em>input</em> and do something to it, producing an <em>output</em>. 
+		A <em>function</em> could, for example, add two numbers no matter what those numbers are.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+
+	<h3>
+		Parts of a Function
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Functions</em> are started by the keyword <em>def</em> followed by the name of the 
+		<em>function</em>. This is then followed by the <em>functions</em> <em>parameters</em> in 
+		parenthesis immediately following the <em>functions</em> name, separated by commas and ended 
+		with a colon. Next is the body of the <em>function</em>, which is what the function is going 
+		to do to the <em>parameters</em>. When printing the result of a <em>function</em> you print the 
+		name of the function, followed by the values which are to take the place of the <em>parameters</em>
+		in the <em>function</em>
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<div class="concept">
+
+	<h3>
+		Functions and Repetition
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Functions</em> help to avoid repetition because it only needs to be defined once. A 
+		<em>function</em> which adds two numbers can be called upon any time that two numbers need
+		adding within the code without redefining it.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<div class="concept">
+
+	<h3>
+		Return Statements
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Return statements</em> tell Python exactly what a <em>function</em> should produce
+		as <em>output</em>. For example, if the body of a function was that a + b = c then the <em>return 
+		statement</em> should either be "return c", or simply put all of it in the 
+		<em>return statement</em> like "return a + b".
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<h2 id="lesson_7">
+	If, Else, While, and Debugging
+</h2>
+		
+<div class="concept">
+
+	<h3>
+		If
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>If statements</em> are statements used in Python to make code do something different depending
+		upon the result of a comparison. Indented within an <em>if statement</em> is a block which 
+		contains what the code will do if the <em>if statement</em> evaluates to true.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+<div class="concept">
+
+	<h3>
+		Else
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em>Else statements</em> are used in addition to <em>if statements</em> to tell code what to do
+		if the <em>if statement</em> evaluates to false. Else statements are along the same indentation 
+		as the same <em>if statement</em> and also have an indented block within them.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<div class="concept">
+
+	<h3>
+		While Loops
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<em> While loops</em> are another Python statement which do something multiple times. You 
+		set a condition under which it will continue, and it will continue until the input no longer
+		meets that condition.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+		
+<div class="concept">
+
+	<h3>
+		Debugging Tips
+	</h3>
+	
+	<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		If code is causing an error, it's best to start by examining the error message. The last line 
+		usually gives the best information to help you figure out the problem. It's also helpful to 
+		compare your code to working examples of similar code, and to check that whatever code you
+		may have based yours upon works also. It's most difficult to figure out an issue when the code
+		doesn't produce any error, but doesn't do what you want it to. In many cases it's helpful when
+		debugging something like this to print individual parts of your code to see what isn't working 
+		exactly.
+	</p>
+
+</div>
+
+		<a href="#beginning">Back to Top</a>
+
+</body>
+
+</html>
